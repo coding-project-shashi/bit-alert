@@ -21,7 +21,7 @@ function callEveryinterval(interval) {
         },1000 * 60 * 30);
 }
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log('server started');
     callEveryinterval();
 });
