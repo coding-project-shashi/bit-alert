@@ -18,7 +18,7 @@ db.once('open',()=>{console.log('connected');});
 function callEveryinterval(interval) {
     setInterval(()=>{
         mainFunction();
-        },1000 * 60 * 30);
+        },1 * 60 * 30);
 }
 
 app.listen(5000,()=>{
